@@ -176,7 +176,8 @@ img {
 .welcome h1 {
     position: fixed;
     top: 50%;
-    left: 10%;
+    left: 5%;
+    right: 5%;
     margin-left: 10%;
     margin-right: 10%;
     background-color: rgba(0, 206, 209, 0.5);
@@ -253,6 +254,11 @@ img {
     .welcome p {
         font-size: 1rem;
     }
+
+    .welcome h1 {
+        font-size: 1.5rem;
+    }
+    
 }
 
 @media (max-width: 500px) {
