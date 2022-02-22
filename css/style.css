@@ -12,7 +12,7 @@ body {
     font-family: "Source Code Pro", sans-serif;
     color: black;
     line-height: 1.6;
-    overflow: hidden;
+    overflow: auto;
 }
 
 ul {
@@ -121,8 +121,8 @@ img {
 }
 
 .nav-icons {
-    margin-right: 1rem;
-    margin-left: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
 }
 
 .nav-icons i:hover {
@@ -139,9 +139,24 @@ img {
     margin-left: 2rem;
 }
 
+.grid {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(auto);
+}
+
 
 .welcome {
+    position: relative;
     background-image: url(../images/intro-background.png);
+    overflow: hidden;
+}
+
+.welcome p {
+    font-size: 2rem;
+    background-color: rgba(0, 206, 209, 0.8);
+    animation: popup 10s;
+    overflow: hidden;
 }
 .welcome span {
     
@@ -153,7 +168,7 @@ img {
 }
 
 .welcome h1 {
-      position: fixed;
+    position: fixed;
     top: 50%;
     left: 10%;
     margin-left: 10%;
@@ -178,4 +193,77 @@ img {
   100% {
     opacity:0;
   }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity:0;
+  }
+  50% {
+      opacity: 0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
+@keyframes popup {
+  0%{
+    opacity: 0;
+    transform: scale(1.1);
+  }
+  50%{
+      opacity: 0;
+    transform: scale(1.2);
+  }
+  60%{
+      opacity: 0;
+    transform: scale(1.3);
+  }
+  70%{
+      opacity: 0;
+    transform: scale(1.3);
+  }
+  80%{
+      opacity: 0;
+    transform: scale(1.2);
+  }
+  90%{
+      overflow: hidden;
+      opacity: 0;
+    transform: scale(1.1);
+  }
+  100%{
+      opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        height: auto;
+    }
+
+    .welcome p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        height: 110px;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+    }
+
+    .navbar .ul {
+        padding: 10px;
+        background-color: (0, 0, 0, 0.1);
+    }
+
+    .navbar i {
+        text-align: center;
+    }
 }
