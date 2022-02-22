@@ -123,6 +123,9 @@ img {
 .nav-icons {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    text-align: center
 }
 
 .nav-icons i:hover {
@@ -135,8 +138,10 @@ img {
 }
 .nav-icons i {
     margin: center;
-    float: left;
+    float: none;
     margin-left: 2rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
 }
 
 .grid {
@@ -256,6 +261,7 @@ img {
 
     .navbar .flex {
         flex-direction: column;
+        text-align: center;
     }
 
     .navbar .ul {
