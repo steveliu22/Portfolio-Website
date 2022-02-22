@@ -6,10 +6,13 @@
     margin: 0;
 }
 
+
+
 body {
-    font-family: "JetBrains Mono", sans-serif;
+    font-family: "Source Code Pro", sans-serif;
     color: black;
     line-height: 1.6;
+    overflow: hidden;
 }
 
 ul {
@@ -68,6 +71,18 @@ img {
     text-shadow: 0 0 5px black;
 }
 
+.welcome {
+    min-height: 100vh;
+    background: cover;
+    position: relative;
+}
+
+.welcome h1 {
+    font-size: 40px;
+    text-align: center;
+}
+
+
 .container {
     max-width: 2000px;
     margin: 0 auto;
@@ -124,11 +139,43 @@ img {
     margin-left: 2rem;
 }
 
-span {
-    opacity: 0;
-    transition: all 0.4s ease;
+
+.welcome {
+    background-image: url(../images/intro-background.png);
+}
+.welcome span {
+    
+    border-right: solid black;
+    border-width: 0.5rem;
+    height: 3%;
+    animation: blinker 1s linear infinite
+
 }
 
-span.fade {
-    opacity: 1;
+.welcome h1 {
+      position: fixed;
+    top: 50%;
+    left: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: rgba(0, 206, 209, 0.5);
+    animation: blinker 1000s linear infinite, fadeOut ease 10s;
+}
+
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity:1;
+  }
+  50% {
+      opacity: 1;
+  }
+  100% {
+    opacity:0;
+  }
 }
