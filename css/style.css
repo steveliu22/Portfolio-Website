@@ -408,6 +408,19 @@ footer .flex {
 }
 
 @media (max-width: 768px) {
+    
+
+    .nav-icons div {
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+        font-size: 0.75rem;
+    }
+
+    .navbar .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+
     .welcome .about-me img {
         width: 2rem;
         height: auto;
@@ -442,18 +455,11 @@ footer .flex {
 
 @media (max-width: 500px) {
 
-    .nav-icons div {
-        margin-top: 0.1rem;
-        margin-bottom: 0.1rem;
-        font-size: 0.75rem;
+        .nav-icons .timeline {
+        font-size: 0.7rem;
     }
     .navbar {
         height: 110px;
-    }
-
-    .navbar .flex {
-        flex-direction: column;
-        text-align: center;
     }
 
     .navbar .ul {
