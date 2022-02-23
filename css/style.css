@@ -441,6 +441,12 @@ footer .flex {
 }
 
 @media (max-width: 500px) {
+
+    .nav-icons div {
+        margin-top: 0.1rem;
+        margin-bottom: 0.1rem;
+        font-size: 0.75rem;
+    }
     .navbar {
         height: 110px;
     }
