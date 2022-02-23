@@ -145,6 +145,36 @@ img {
     margin-bottom: 0.3rem;
 }
 
+.social {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+    text-align: center
+}
+
+.social i:hover {
+    -webkit-transition: text-shadow 1s linear;
+    -moz-transition: text-shadow 1s linear;
+    -ms-transition: text-shadow 1s linear;
+    -o-transition: text-shadow 1s linear;
+    transition: text-shadow 0.25s linear;
+    text-shadow: 0 0 5px black;
+}
+.social i {
+    margin: center;
+    float: none;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 0.3rem;
+    margin-bottom: 0.3rem;
+}
+
+.flex .contacts {
+    text-align: center;
+    font-size: 1rem;
+}
+
 .grid {
     overflow: hidden;
     display: grid;
