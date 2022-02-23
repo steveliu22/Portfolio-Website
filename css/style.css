@@ -127,7 +127,7 @@ img {
     margin-top: 0.3rem;
     margin-bottom: 0.3rem;
     text-align: center;
-    animation: fadeIn ease 5s;
+    animation: fadeIn ease 1s;
 }
 
 .nav-icons i:hover {
