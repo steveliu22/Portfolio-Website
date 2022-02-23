@@ -215,7 +215,7 @@ img {
     overflow: hidden;
     margin-bottom: -2%;
     display: grid;
-    grid-template-columns: 49% 9% 9% 9%;
+    grid-template-columns: 59% 9% 9% 9%;
     column-gap: 10%;
     padding-left: 1%;
     padding-right: 1%;
