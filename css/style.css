@@ -203,7 +203,7 @@ img {
 
 .welcome p {
     font-size: 2rem;
-    background-color: rgba(0, 206, 209, 0.8);
+    background-color: rgba(0, 206, 209, 0.5);
     animation: popup 10s;
     overflow: hidden;
     text-align: center;
@@ -220,7 +220,7 @@ img {
 
 .welcome .about-me {
     font-size: 1.25rem;
-    background-color: rgba(0, 128, 128, 0.8);
+    background-color: rgba(0, 128, 128, 0.5);
     animation: popup 10s;
     overflow: hidden;
     margin-bottom: -2%;
@@ -262,7 +262,7 @@ img {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   animation: popup 10s;
-  background-color: rgba(0, 128, 128, 0.8);
+  background-color: rgba(0, 128, 128, 0.5);
   
 }
 
@@ -271,7 +271,7 @@ img {
     align-items: center;
     text-align: center;
     margin: center;
-    
+    border-style: groove;
 }
 
 .grid-item img {
