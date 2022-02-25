@@ -67,7 +67,7 @@ img {
     margin: 0 5px;
 }
 
-.navbar a:hover, .nav-icons div:hover  {
+.navbar a:hover , .nav-icons div:hover  {
     -webkit-transition: text-shadow 1s linear;
     -moz-transition: text-shadow 1s linear;
     -ms-transition: text-shadow 1s linear;
@@ -350,7 +350,7 @@ img {
   left: 0;
 }
 
-.grid-project:hover .overlay {
+.grid-project:hover .overlay, .grid-project:active .overlay {
   opacity: 1;
 }
 
