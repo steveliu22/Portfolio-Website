@@ -711,18 +711,19 @@
 
         .text button{
             font-size: 0.4rem;
-            display:block;
             margin-top: 50%;
-            margin-left: 0.2rem;
-            margin-right: 0.2rem;
-            width: auto;
-            padding: auto auto;
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        .text p {
+            font-size: 0.6rem;
         }
 
     }
 
 
-    @media (max-width: 500px) {
+    @media (max-width: 550px) {
 
         .navbar {
             height: 120px;
@@ -750,6 +751,20 @@
         .grid-item img {
         width: 1.5rem ;
         height: auto;
+        }
+
+    .text button{
+        font-size: 0.4rem;
+    
+            margin-top: 50%;
+            margin-left: 0.2rem;
+            margin-right: 0.2rem;
+            width: auto;
+        
+        }
+
+        .text p {
+            font-size: 0.38rem;
         }
 
     }
