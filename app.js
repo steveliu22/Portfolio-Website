@@ -29,7 +29,6 @@ function erase() {
 
     
 }
-
 document.querySelectorAll('a[href^="#"]').forEach(a => {
         a.addEventListener('click', function (e) {
             e.preventDefault();
@@ -43,10 +42,43 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
         });
     });
 
+
+
 window.addEventListener("load", typewriter);
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 
 
+const openButton = document.getElementById('more');
+const modelContainer = document.getElementById('model-container');
+const closeButton = document.getElementById('close');
+
+
+
+for(let i = 0; i < 5; i += 1) {
+
+    let openID = 'more' + i;
+    let containerID = 'model-container' + i;
+    let closeID = 'close' + i;
+
+    if(i == 0) {
+        openID = 'more';
+        containerID = 'model-container';
+        closeID = 'close';
+    }
+
+    const open = document.getElementById(openID);
+    const container = document.getElementById(containerID);
+    const close = document.getElementById(closeID);
+
+    open.addEventListener('click', () => {
+        container.classList.add('show');
+    })
+
+
+    close.addEventListener('click', () => {
+        container.classList.remove('show');
+    })
+}
 

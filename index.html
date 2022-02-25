@@ -43,8 +43,8 @@
 
             <nav>
                 <ul>
-                    <li><a href="index.html"><strong>Home</strong></a></li>
-                    <li><a href="./Steve_Liu_Resume.pdf"><strong>Resume</strong></a></li>
+
+                    <li><a href="./Steve_Liu_Resume.pdf"><strong>My Resume</strong></a></li>
                 </ul>
             </nav>
 
@@ -156,18 +156,48 @@
             <div class="grid-projects">
                 <div class="grid-project"><img src="./images/imageeditor.gif">
                     <p>Image Editor</p>
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Java</p> <button id="more">FIND OUT MORE</button>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="grid-project"><img src="./images/database.gif" />
                     <p>Video Database Editor w/ UI</p>
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Java/JavaScript/HTML/CSS/SQL</p> <button id="more1">FIND OUT MORE</button>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="grid-project"><img src="./images/minishell.gif" />
                     <p>Mini Shell</p>
+                    <div class="overlay">
+                        <div class="text">
+                            <p>C/Python</p> <button id="more2">FIND OUT MORE</button>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="grid-project"><img src="./images/maze.gif" />
                     <p>Randomized Maze Game</p>
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Java</p> <button id="more3">FIND OUT MORE</button>
+
+                        </div>
+                    </div>
                 </div>
                 <div class="grid-project"><img src="./images/floodit2.gif" />
                     <p>Flood It</p>
+                    <div class="overlay">
+                        <div class="text">
+                            <p>Java</p> <button id="more4">FIND OUT MORE</button>
+
+                        </div>
+                    </div>
                 </div>
 
                 <div class="grid-project">
@@ -192,6 +222,106 @@
         </div>
     </section>
     </script>
+
+    <div class="model-container" id="model-container">
+        <div class="model">
+            <div class="lang"><strong>Languages/Libraries:</strong> Java, JUnit, Swing</div>
+            <div class="dates"><strong>Date Started/Completed:</strong> June - July 2021</div>
+            <p>A GUI based editor created for image manipulation built in Java using the standard Swing library with
+                functionality to
+                sharpen, blur, and apply filters such as grayscale and sepia to imported and procedurally generated
+                images. These
+                features are implemented using matrix algebra to transform pixels. The codebase applies common
+                object-oriented design
+                patterns such as model-view-controller, command, and decorator to maintain flexibility, scalability,
+                and
+                efficiency for
+                potentially new features. Extensive amounts of javadocs, comments, and testing through JUnit are
+                also
+                written to ensure
+                future understanding of the codebase. This project was built in collaboration with fellow
+                Northeastern
+                student, David
+                Sharick.</p>
+
+            <button id="close">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <div class="model-container" id="model-container1">
+        <div class="model">
+            <div class="lang"><strong>Languages/Libraries:</strong> Java, JavaScript, HTML/CSS, SQL, Spring Boot,
+                React.js</div>
+            <div class="dates"><strong>Date Started/Completed:</strong> November 2021 - December 2021 </div>
+            <p>A simple representation of a video platform database with a user interface. This application uses SQL for
+                the backend
+                database
+                storage, connects the database to a Java interface using the JDBC API, and utilizes Spring Boot for
+                server-side user queries and transactions to the database. The front-end UI is rendered using basic
+                HTML/CSS, JavaScript, and the
+                React.js library. More information about this project is in the README of the Git repository, made
+                available upon
+                request.</p>
+
+            <button id="close1">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <div class="model-container" id="model-container2">
+        <div class="model">
+            <div class="lang"><strong>Languages/Libraries:</strong> C, Python</div>
+            <div class="dates"><strong>Date Started/Completed:</strong> October 2021</div>
+            <p>A mini Unix shell built in C and Python for testing. Implements a lexer to parse user commands into
+                individual tokens.
+                Utilizes a signal handler for stopping the shell. Employs the use of multiprocessing to allow
+                multiple instances of a shell to run at one time and to support basic shell commands such as ls, cd,
+                echo, cat etc. as well as
+                chaining multiple commands using the ";" syntax and piping commands using "|".</p>
+
+            <button id="close2">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <div class="model-container" id="model-container3">
+        <div class="model">
+            <div class="lang"><strong>Languages/Libraries:</strong> Java, Image Library, Tester Library</div>
+            <div class="dates"><strong>Date Started/Completed:</strong> May 2021</div>
+            <p>A maze game generated using an undirected connected graph with random edge weights and Kruskal's minimum
+                spanning tree algorithm.
+                Users are given the option to either
+                traverse the maze themselves or allow the computer to solve it for them using either depth or breadth
+                first search
+                (implemented using a custom stack/queue data structure). When either the player or computer has solved
+                the maze, the
+                game recursively backtracks using parent nodes to display the optimal path to traverse.</p>
+
+            <button id="close3">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <div class="model-container" id="model-container4">
+        <div class="model">
+            <div class="lang"><strong>Languages/Libraries:</strong> Java, Image Library, Tester Library</div>
+            <div class="dates"><strong>Date Started/Completed:</strong> June - July 2021</div>
+            <p>A variation of the game Flood It found <a href="https://unixpapa.com/floodit/" target="_blank"
+                    style="color: purple;">here</a>.
+                Contains features such as randomized board generation, time tracker, and
+                displays your current score.</p>
+
+            <button id="close4">
+                Close
+            </button>
+        </div>
+    </div>
+
 
 
     <footer class="footer bg-dark py-5" id="contact-me"></footer>
