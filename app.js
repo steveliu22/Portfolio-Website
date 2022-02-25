@@ -1,4 +1,4 @@
-var text = "Hi, welcome to my website! Let me introduce myself:";
+var text = "Hi, I'm Steve, welcome to my website!";
 var textPosition = 0;
 var tracker = 0;
 var speed = 60;
