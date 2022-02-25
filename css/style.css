@@ -15,6 +15,7 @@ body {
     color: black;
     line-height: 1.6;
     overflow: auto;
+    animation: hide-scroll 10s;
 }
 
 ul {
@@ -46,6 +47,7 @@ img {
     height: auto;
     
 }
+
 
 
 .navbar .flex {
@@ -139,6 +141,12 @@ img {
     margin-top: 2%;
     width: 40px;
     height: 40px;
+}
+
+.intro a {
+  padding: 0;
+  margin: 0;
+  display: inline-block;
 }
 
 .nav-icons {
@@ -293,6 +301,36 @@ img {
     
 }
 
+.grid-projects {
+  display: grid;
+  grid-template-columns: 33.333% 33.333% auto;
+  animation: popup 10s;
+  background-color: rgba(140, 206, 209, 0.5);
+  
+}
+
+.grid-project {
+    position: inline;
+    align-items: center;
+    text-align: center;
+    vertical-align: bottom;
+    margin: center;
+    border-style: groove;
+}
+
+.grid-projects img {
+    margin-top: 25%;
+    margin-bottom: 10%;
+    width: 95% ;
+    height: auto;
+    
+}
+
+.grid-project p {
+    font-family: 'Roboto Slab', sans serif !important;
+    background-color: rgba(0, 187, 225, 0.0);
+}
+
 .grid-item img:hover {
     animation: popup2 2s;
 }
@@ -354,15 +392,24 @@ img {
   }
 }
 
+@keyframes hide-scroll {
+  from,
+  to {
+    overflow: hidden;
+  }
+}
+
 @keyframes fadeIn {
   0% {
     opacity:0;
   }
   50% {
       opacity: 0;
+      overflow: hidden !important;
   }
   100% {
     opacity:1;
+    overflow: visible !important;
   }
 }
 
@@ -424,6 +471,23 @@ img {
   }
 }
 
+@media (max-width: 1215px) {
+    
+    .grid-project p {
+        font-size: 0.95rem;
+    }
+
+    .navbar {
+        font-size: 0.75rem;
+    }
+
+        .navbar .flex {
+        flex-direction: column;
+        text-align: center;
+    }
+ 
+}
+
 @media (max-width: 768px) {
     
     .navbar .flex {
@@ -462,6 +526,10 @@ img {
     .welcome h1 {
         font-size: 1.5rem;
     }
+
+    .grid-project p {
+        font-size: 0.5rem;
+    }
     
     .grid-item img {
     width: 2rem ;
@@ -472,9 +540,6 @@ img {
 
 @media (max-width: 500px) {
 
-    .nav-icons .timeline {
-        font-size: 0.7rem;
-    }
     .navbar {
         height: 110px;
     }
