@@ -14,7 +14,7 @@ function typewriter() {
     }
 
     else {
-        setTimeout(erase, 6000);
+        setTimeout(erase, 5000);
     }
 
 }
@@ -22,9 +22,26 @@ function typewriter() {
 function erase() {
     
     getDoc.innerHTML = "";
+    window.scrollTo({
+  top: 0,
+  behavior: 'smooth',
+})
 
     
 }
+
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function (e) {
+            e.preventDefault();
+            let href = this.getAttribute("href");
+            let elem = document.querySelector(href)||document.querySelector("a[name="+href.substring(1, href.length)+"]");
+            window.scroll({
+                top: elem.offsetTop, 
+                left: 0, 
+                behavior: 'smooth' 
+            });
+        });
+    });
 
 window.addEventListener("load", typewriter);
 window.onbeforeunload = function () {

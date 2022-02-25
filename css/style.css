@@ -15,7 +15,6 @@ body {
     color: black;
     line-height: 1.6;
     overflow: auto;
-    animation: hide-scroll 10s;
 }
 
 ul {
@@ -146,7 +145,12 @@ img {
 .intro a {
   padding: 0;
   margin: 0;
-  display: inline-block;
+}
+
+.intro a:hover {
+  padding: 0;
+  margin: 0;
+  opacity: 0.9;
 }
 
 .nav-icons {
