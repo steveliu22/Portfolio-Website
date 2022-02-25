@@ -459,6 +459,10 @@
 
     .model div {
         font-size: 2rem;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
         
     }
 
